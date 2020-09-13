@@ -65,6 +65,7 @@ void game(bool automode)
     gamestart:
     difficulty = change_difficulty(difficulty);
     // range set for random generating numbers
+    /*
     if (difficulty == 1)
     {
         range = 10;
@@ -94,6 +95,35 @@ void game(bool automode)
         cout<< "Enter a valid difficulty please";
         difficulty = 0;
         goto gamestart;
+    }
+     */
+    switch (difficulty)
+    {
+        default:
+            cout<< "Enter a valid difficulty please\n";
+            difficulty = 0;
+            goto gamestart;
+        case 0:
+            range = 18446744073709551615;
+            break;
+        case 1:
+            range = 10;
+            break;
+        case 2:
+            range = 100;
+            break;
+        case 3:
+            range = 10000;
+            break;
+        case 4:
+            range = 10000000;
+            break;
+        case 5:
+            range = 1000000000000;
+            break;
+        case 6:
+            range = 18446744073709551615;
+            break;
     }
     // random is very hard
     random_device dev;
@@ -227,7 +257,7 @@ int main()
             // print success game counter
         {
             cout << "You have play " << counter << " game(s), while " << playercounter<< " time(s) play in player mode, and "
-            << autocounter << "time(s) play in auto mode.";
+                 << autocounter << " time(s) play in auto mode.";
             goto nextgame;
         }
         else if (decision1 == 4)
