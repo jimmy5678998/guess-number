@@ -2,7 +2,7 @@
 This is a simple program about guessing the number, you can choose difficulty and mode to have fun.
 
 Difficulty:
-There are 4 difficulty: 1. Easy(1~10) 	 2. Medium(1~100)	 3. Hard(1~10000)	 4.Insane(1~10000000), with 3 hidden difficulty, you can find them from code.
+There are 4 difficulty: 1. Easy(1-10) 	 2. Medium(1-100)	 3. Hard(1-10000)	 4.Insane(1-10000000), with 3 hidden difficulty, you can find them from code.
 
 Mode:
 You can choose player mode, where you will be the player and guess the number by yourself. Or you can choose auto mode, watching the program solve the game. 
